@@ -66,7 +66,7 @@ const FEATURES: Feature[] = [
     },
 ];
 
-const IMAGE_URL = "https://images.stockcake.com/public/6/a/b/6ab27410-dd03-4550-aed1-899d930e07a4_large/graduate-holding-diploma-stockcake.jpg";
+const IMAGE_URL = "/why-us.jpeg";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -145,7 +145,7 @@ export default function WhyChooseNAHM() {
                 className="pointer-events-none absolute inset-y-8 right-0 hidden w-1.5 rounded-full bg-gradient-to-b from-[#C6A15B] via-[#071322] to-[#C6A15B] opacity-70 lg:block"
             />
 
-            <div className="relative mx-auto max-w-[100rem] px-4 sm:px-8 lg:px-14">
+            <div className="relative mx-auto max-w-[100rem] px-3 sm:px-8 lg:px-14">
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
@@ -155,7 +155,7 @@ export default function WhyChooseNAHM() {
                 >
                     {/* IMAGE */}
                     <motion.div variants={fadeLeft} className="relative lg:col-span-7">
-                        <div className="relative h-full min-h-[300px] overflow-hidden rounded-[1.75rem] sm:min-h-[420px] sm:rounded-[2rem] lg:min-h-[640px]">
+                        <div className="relative h-full min-h-[380px] overflow-hidden rounded-[1.75rem] sm:min-h-[460px] sm:rounded-[2rem] lg:min-h-[640px]">
                             <motion.img
                                 src={IMAGE_URL}
                                 alt="Trainees at a live Nexstay Hotels & Resorts property"

@@ -37,7 +37,7 @@ export default function AboutWhoWeAre() {
         <div className="relative min-h-[300px] overflow-hidden sm:min-h-[400px] lg:min-h-[640px]">
           <div className="ab-frame absolute inset-0 bg-gradient-to-b from-[#E7C77E] via-[#C6A15B] to-[#8f7238]" />
           <motion.img
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80"
+            src="/who-we-are.jpeg"
             alt="Nexstay Academy of Hotel Management Campus and Training"
             variants={rm ? undefined : imageV}
             initial="hidden"

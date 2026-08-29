@@ -44,7 +44,7 @@ export default function ProgramOverview() {
         <div className="relative min-h-[280px] overflow-hidden sm:min-h-[360px] lg:min-h-[640px]">
           <div className="po-frame absolute inset-0 bg-gradient-to-b from-[#E7C77E] via-[#C6A15B] to-[#8f7238]" />
           <motion.img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+            src="/1200-800.jpg.jpeg"
             alt="Diploma in Hotel Management — NAHM students in training"
             variants={rm ? undefined : imageV}
             initial="hidden"

@@ -27,14 +27,12 @@ export const Navbar: React.FC = () => {
   // Close menu on route change
   useEffect(() => { setIsMobileMenuOpen(false); }, [location.pathname]);
 
-  // Brand logo text color adaptation:
-  const brandTextColor = (!isHome || scrolled)
-    ? 'text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]'
-    : 'text-[#0a192f]';
+  // Brand logo text is always white (hero always has dark video bg)
+  const brandTextColor = 'text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]';
 
   const subTextColor = (!isHome || scrolled)
     ? 'text-[#c59b27]'
-    : 'text-[#8b1525]';
+    : 'text-[#c59b27]';
 
   return (
     <>

@@ -10,7 +10,7 @@ import type { LogoItem } from "../LogoLoop";
  */
 
 const IMAGE_URL =
-    "https://plus.unsplash.com/premium_photo-1713296255442-e9338f42aad8?fm=jpg&q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pdmVyc2l0eSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D";
+    "/placement.jpeg";
 
 /* =========================================================
    HIRING PARTNERS — real logos via Clearbit Logo API
@@ -115,7 +115,7 @@ export default function PlacementsStrip() {
             <div className="grid w-full grid-cols-1 lg:grid-cols-[0.9fr_1fr]">
 
                 {/* ===================================================== LEFT — IMAGE ===================================================== */}
-                <div className="relative min-h-[280px] overflow-hidden sm:min-h-[360px] lg:min-h-[620px]">
+                <div className="relative min-h-[380px] overflow-hidden sm:min-h-[460px] lg:min-h-[620px]">
 
                     {/* gold frame layer, only visible where the inner image is inset (the diagonal edge) */}
                     <div className="diag-frame absolute inset-0 bg-gradient-to-b from-[#E7C77E] via-[#C6A15B] to-[#8f7238]" />

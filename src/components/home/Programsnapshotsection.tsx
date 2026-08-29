@@ -80,11 +80,11 @@ const PHASES = [
 
 const ProgramSnapshotSection: React.FC = () => {
     return (
-        <section className="relative -mt-16 overflow-hidden bg-white pb-20 pt-16 sm:-mt-24 sm:pb-28 sm:pt-24 lg:-mt-52 lg:pt-60">
-            {/* Diagonal brand-navy background shape matching the homepage split */}
+        <section className="relative overflow-hidden bg-[#071322] lg:bg-white pb-16 pt-14 sm:pb-24 sm:pt-20 lg:-mt-52 lg:pt-60">
+            {/* Diagonal brand-navy background shape — desktop only */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0"
+                className="pointer-events-none absolute inset-0 hidden lg:block"
                 style={{
                     background: "#071322",
                     clipPath: "polygon(0 0, 72% 0, 44% 100%, 0 100%)",
@@ -119,7 +119,7 @@ const ProgramSnapshotSection: React.FC = () => {
 
                     <motion.p
                         variants={riseIn}
-                        className="mt-3 max-w-xl text-sm sm:text-base leading-relaxed text-slate-300 font-light font-['Outfit']"
+                        className="mt-3 max-w-xl text-sm sm:text-base leading-relaxed text-slate-300 font-light font-['Outfit'] lg:text-slate-300"
                     >
                         Industry-built curriculum that turns classroom hours into guaranteed, paid on-the-job training and 5-star international placements.
                     </motion.p>
@@ -242,9 +242,10 @@ const ProgramSnapshotSection: React.FC = () => {
                         className="lg:col-span-6 xl:col-span-6 flex flex-col gap-5 justify-between"
                     >
                         {/* Hero Image Box with Overlays */}
-                        <div className="relative min-h-[300px] sm:min-h-[360px] lg:min-h-[400px] flex-1 rounded-3xl overflow-hidden border border-gray-300 shadow-2xl">
+                        <div className="relative min-h-[300px] sm:min-h-[360px] lg:min-h-[400px] flex-1 rounded-3xl overflow-hidden  shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop"
+                                src="/1200-800.jpg.jpeg"
+                                loading="lazy"
                                 alt="Nexstay Hotels & Resorts Live Training Facility"
                                 className="h-full w-full object-cover"
                             />

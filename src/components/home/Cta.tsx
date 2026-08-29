@@ -3,7 +3,7 @@ import { ArrowUpRight, MessageCircle, Sparkles, Building2, GraduationCap, Users2
 import { Link } from "react-router-dom";
 
 const RESORT_BG =
-    "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=80";
+    "/Home-cta-banner.jpeg";
 
 const EASE_LUXURY = [0.16, 1, 0.3, 1] as const;
 
@@ -31,7 +31,7 @@ export default function CTASection() {
     };
 
     return (
-        <section className="relative isolate overflow-hidden bg-[#071322] py-20 sm:py-24 md:py-12 lg:py-16">
+        <section className="relative isolate overflow-hidden bg-[#071322] py-12 sm:py-24 md:py-12 lg:py-16">
             <style>{`
                 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
 
