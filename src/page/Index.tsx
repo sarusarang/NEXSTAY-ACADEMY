@@ -9,11 +9,8 @@ import PlacementsStrip from '@/components/home/PlacementStrip';
 
 
 export default function Home() {
-
   return (
-
-    <div className="w-full bg-white overflow-hidden">
-
+    <div className="w-full bg-[#071322] overflow-x-hidden">
       <HeroSection />
 
 

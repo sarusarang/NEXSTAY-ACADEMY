@@ -72,7 +72,7 @@ export default function FeeOverview() {
           viewport={vp}
         >
           <motion.img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80"
+            src="/one-fee.jpeg"
             alt="NAHM professional training kitchen"
             className="absolute inset-0 h-full w-full object-cover object-center"
             initial={shouldReduceMotion ? undefined : { scale: 1.1 }}

@@ -12,8 +12,7 @@ import {
     Download,
 } from 'lucide-react';
 
-const CAMPUS_IMAGE =
-    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80';
+const CAMPUS_IMAGE = '/1600-1088.jpg.webp';
 
 const HIGHLIGHTS = [
     { icon: GraduationCap, label: '15-Month Diploma Program' },
@@ -125,7 +124,7 @@ export const HomeAboutSection: React.FC = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.25 }}
-                    className="relative z-10 w-full max-w-[95rem] mx-auto px-5 sm:px-10 lg:px-14 grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center"
+                    className="relative z-10 w-full max-w-[95rem] mx-auto px-4 sm:px-10 lg:px-14 grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center"
                 >
                     {/* LEFT COLUMN: TITLE, DESCRIPTION & CTAS */}
                     <div className="lg:col-span-5 text-white">
@@ -198,11 +197,11 @@ export const HomeAboutSection: React.FC = () => {
                         onAnimationComplete={() => setImageSettled(true)}
                         className="lg:col-span-7 relative"
                     >
-                        <div className="relative w-full rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10">
+                        <div className="relative w-full min-h-[280px] sm:min-h-[360px] lg:min-h-0 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10">
                             <motion.img
                                 src={CAMPUS_IMAGE}
                                 alt="Nexstay Academy hospitality training"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full min-h-[280px] sm:min-h-[360px] lg:min-h-0 object-cover"
                                 animate={
                                     imageSettled && !prefersReducedMotion
                                         ? { scale: [1, 1.035, 1] }
@@ -221,7 +220,7 @@ export const HomeAboutSection: React.FC = () => {
             </section>
 
             {/* 2. FLOATING OVERLAPPING CARD: PROGRAM HIGHLIGHTS + ABOUT */}
-            <div className="relative z-20 -mt-10 sm:-mt-20 pb-4 sm:pb-6 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto">
+            <div className="relative z-20 -mt-10 sm:-mt-20 pb-4 sm:pb-6 px-3 sm:px-6 lg:px-8 max-w-[90rem] mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 36 }}
                     whileInView={{ opacity: 1, y: 0 }}

@@ -3,8 +3,7 @@
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { Utensils, Home, ArrowUpRight } from "lucide-react";
 
-const IMAGE_URL =
-    "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1600&auto=format&fit=crop";
+const IMAGE_URL ="/earn-while.jpeg";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -24,7 +23,7 @@ export default function StudentRewardsBanner() {
     };
 
     return (
-        <section className="relative w-full overflow-hidden bg-white">
+        <section className="relative w-full overflow-hidden bg-[#071322]">
             <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
         .font-headline { font-family: 'Oswald', ui-sans-serif, sans-serif; }
@@ -34,7 +33,7 @@ export default function StudentRewardsBanner() {
             <div className="relative flex w-full flex-col lg:flex-row lg:min-h-[640px]">
                 {/* IMAGE */}
                 <motion.div
-                    className="relative h-[38vh] min-h-[240px] w-full overflow-hidden sm:h-[46vh] lg:h-auto lg:min-h-[640px] lg:flex-1"
+                    className="relative h-[50vh] min-h-[360px] w-full overflow-hidden sm:h-[56vh] sm:min-h-[440px] lg:h-auto lg:min-h-[640px] lg:flex-1 lg:-mr-[8%]"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true, amount: 0.3 }}
@@ -58,8 +57,7 @@ export default function StudentRewardsBanner() {
 
 
                 <div
-                    className="relative -mt-6 w-full bg-[#071322] pt-10 sm:-mt-10 sm:pt-14 lg:mt-0 lg:w-[56%] lg:flex-shrink-0 lg:pt-0
-    [clip-path:polygon(0_5%,100%_0,100%_100%,0_100%)]
+                    className="relative w-full bg-[#071322] pt-10 sm:pt-14 lg:mt-0 lg:w-[56%] lg:flex-shrink-0 lg:pt-0
     lg:[clip-path:polygon(0_0,100%_0,100%_100%,14%_100%)]"
                 >
 

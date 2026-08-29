@@ -72,7 +72,7 @@ const DIFFERENTIATORS = [
   },
 ];
 
-const BG_IMAGE = "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=2000&q=80";
+const BG_IMAGE = "/why-we-are.jpeg";
 
 export default function AboutWhyDifferent() {
   const rm = useReducedMotion();
@@ -91,7 +91,7 @@ export default function AboutWhyDifferent() {
           transition={{ duration: 2.2, ease: EASE }}
         />
         <div className="absolute inset-0 bg-[#071322]/15" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#071322] via-[#071322]/75 to-[#071322]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#071322] via-[#071322]/20 to-[#071322]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1536px] px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">

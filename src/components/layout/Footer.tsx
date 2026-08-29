@@ -106,10 +106,10 @@ export const Footer: React.FC = () => {
                 className="w-12 h-12 md:w-13 md:h-13 object-contain"
               />
               <div className="flex flex-col">
-                <span className="font-['Outfit'] font-black text-lg md:text-xl text-[#e5be58] tracking-tight uppercase leading-none">
+                <span className="font-['Outfit'] font-black text-lg md:text-xl text-white tracking-tight uppercase leading-none">
                   NEXSTAY ACADEMY
                 </span>
-                <span className="text-[9.5px] font-bold tracking-widest text-slate-300 uppercase mt-1">
+                <span className="text-[9.5px] font-bold tracking-widest text-[#e5be58] uppercase mt-1">
                   OF HOTEL MANAGEMENT
                 </span>
               </div>

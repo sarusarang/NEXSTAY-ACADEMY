@@ -41,15 +41,28 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 100%;
   min-height: 100%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #ffffff;
+  background-color: #071322;
   color: #0f172a;
   overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
 }
 
 /* Angular slanted clip path for the hero diagonal split */
