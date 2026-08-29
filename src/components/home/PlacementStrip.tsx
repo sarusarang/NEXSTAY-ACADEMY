@@ -34,11 +34,9 @@ const PARTNERS: LogoItem[] = [
 ========================================================= */
 
 const ACCREDITATIONS: LogoItem[] = [
-    { title: 'Crowne Plaza',  src: 'https://1000logos.net/wp-content/uploads/2022/11/IGNOU-Logo.png',  alt: 'Crowne Plaza' },
-    { title: 'Holiday Inn',   src: 'https://1000logos.net/wp-content/uploads/2022/11/IGNOU-Logo.png',   alt: 'Holiday Inn' },
-    { title: 'Sheraton',      src: 'https://1000logos.net/wp-content/uploads/2022/11/IGNOU-Logo.png',     alt: 'Sheraton' },
-    { title: 'Four Seasons',  src: 'https://1000logos.net/wp-content/uploads/2022/11/IGNOU-Logo.png', alt: 'Four Seasons' },
-    { title: 'Wyndham',       src: 'https://1000logos.net/wp-content/uploads/2022/11/IGNOU-Logo.png',      alt: 'Wyndham' },
+    { title: 'NSDC',  src: '/Affiliated-1.png',  alt: 'NSDC' },
+    { title: 'THSC',   src: '/Affiliated-2.png',   alt: 'THSC' },
+   
 ];
 
 /* =========================================================

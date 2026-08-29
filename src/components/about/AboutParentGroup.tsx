@@ -7,7 +7,7 @@ const vp = { once: true, amount: 0.15 as const };
 const sV: Variants = { hidden: {}, show: { transition: { staggerChildren: 0.1, delayChildren: 0.05 } } };
 const iV: Variants = { hidden: { opacity: 0, y: 22 }, show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE } } };
 
-const RESORT_BG = "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=80";
+const RESORT_BG = "/about-bg-nexsaty.jpg.jpeg";
 
 const SEGMENTS = [
   {
@@ -47,8 +47,8 @@ export default function AboutParentGroup() {
           transition={{ duration: 2.2, ease: EASE }}
         />
         {/* Deep dark gradient washes ensuring high text contrast */}
-        <div className="absolute inset-0 bg-[#071322]/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#071322]/90 via-[#071322]/70 to-[#071322]" />
+        <div className="absolute inset-0 bg-[#071322]/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#071322]/40 via-[#071322]/50 to-[#071322]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1536px] px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">

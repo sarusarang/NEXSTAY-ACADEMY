@@ -16,7 +16,6 @@ export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 25);
@@ -26,13 +25,6 @@ export const Navbar: React.FC = () => {
 
   // Close menu on route change
   useEffect(() => { setIsMobileMenuOpen(false); }, [location.pathname]);
-
-  // Brand logo text is always white (hero always has dark video bg)
-  const brandTextColor = 'text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]';
-
-  const subTextColor = (!isHome || scrolled)
-    ? 'text-[#c59b27]'
-    : 'text-[#c59b27]';
 
   return (
     <>
@@ -53,22 +45,14 @@ export const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: [0.25, 1, 0.5, 1] }}
           >
-            <Link to="/" className="flex items-center gap-3 group">
+            <Link to="/" className="flex items-center group">
               <motion.img
-                whileHover={{ scale: 1.06, rotate: 2 }}
+                whileHover={{ scale: 1.04 }}
                 transition={{ type: 'spring', stiffness: 280, damping: 18 }}
-                src="/LOGO-01.webp"
-                alt="Nexstay Logo"
-                className="w-11 h-11 md:w-13 md:h-13 object-contain"
+                src="/nav-logo-new.png"
+                alt="Nexstay Academy"
+                className="h-11 sm:h-12 md:h-12 w-auto object-contain"
               />
-              <div className="flex flex-col leading-none">
-                <span className={`font-['Outfit'] font-black text-lg md:text-xl tracking-tighter uppercase ${brandTextColor} transition-colors duration-300`}>
-                  NEXSTAY<span className="text-[#c59b27]">.</span>
-                </span>
-                <span className={`text-[9px] sm:text-[10px] font-bold tracking-widest uppercase mt-0.5 ${subTextColor} transition-colors duration-300`}>
-                  Academy of Hotel Mgmt
-                </span>
-              </div>
             </Link>
           </motion.div>
 
@@ -147,12 +131,9 @@ export const Navbar: React.FC = () => {
               className="fixed top-0 right-0 bottom-0 w-[82%] max-w-xs sm:max-w-sm bg-[#06101f] z-[70] flex flex-col shadow-2xl border-l border-white/10"
             >
               <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <img src="/LOGO-01.webp" alt="Nexstay" className="w-9 h-9 object-contain" />
-                  <span className="font-['Outfit'] font-black text-base text-white uppercase tracking-tight">
-                    Nexstay<span className="text-[#c59b27]">.</span>
-                  </span>
-                </div>
+                <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+                  <img src="/nav-logo-new.png" alt="Nexstay Academy" className="h-10 w-auto object-contain" />
+                </Link>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="p-1.5 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors"

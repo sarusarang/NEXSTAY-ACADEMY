@@ -99,20 +99,12 @@ export const Footer: React.FC = () => {
 
           {/* Column 1: Brand & Accreditations (4 cols) */}
           <div className="lg:col-span-4 space-y-5 sm:space-y-6">
-            <Link to="/" className="flex items-center gap-3.5 group">
+            <Link to="/" className="inline-block group">
               <img
-                src="/LOGO-01.webp"
+                src="/nav-logo-new.png"
                 alt="Nexstay Academy"
-                className="w-12 h-12 md:w-13 md:h-13 object-contain"
+                className="h-12 sm:h-10 md:h-12 w-auto object-contain"
               />
-              <div className="flex flex-col">
-                <span className="font-['Outfit'] font-black text-lg md:text-xl text-white tracking-tight uppercase leading-none">
-                  NEXSTAY ACADEMY
-                </span>
-                <span className="text-[9.5px] font-bold tracking-widest text-[#e5be58] uppercase mt-1">
-                  OF HOTEL MANAGEMENT
-                </span>
-              </div>
             </Link>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm">

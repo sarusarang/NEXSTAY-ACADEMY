@@ -7,14 +7,14 @@ const paymentOptions = [
     title: 'One-Time Payment',
     badge: 'Preferred & Hassle-Free',
     desc: "Pay the full fee upfront and you're set for the entire program — no recurring invoices, fee deadlines, or further paperwork.",
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
+    image: '/online-pay.jpeg',
   },
   {
     icon: CalendarClock,
     title: 'Installment Plan',
     badge: 'Term-Based Flexibility',
     desc: 'Split your fee across the academic term, subject to academy policy. Speak with your counselor for tailored monthly schedules.',
-    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80',
+    image: '/offline-pay.jpeg',
   },
 ];
 
@@ -95,8 +95,8 @@ export default function PaymentOptions() {
                 <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.04] overflow-hidden" />
 
                 {/* Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#071322] via-[#071322]/85 to-[#071322]/30" />
-                <div className="absolute inset-0 bg-[#071322]/30 group-hover:bg-[#071322]/10 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071322] via-[#071322]/5 to-[#071322]/10" />
+                <div className="absolute inset-0 bg-[#071322]/20 group-hover:bg-[#071322]/10 transition-colors duration-500" />
 
                 {/* Content */}
                 <div className="relative z-10">

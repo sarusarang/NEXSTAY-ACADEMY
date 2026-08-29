@@ -127,7 +127,7 @@ export default function AdmissionProcess() {
                 className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group min-h-[280px] sm:min-h-[380px] lg:min-h-[520px] xl:min-h-[580px]"
               >
                 <motion.img
-                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+                  src="/five-steps.jpeg"
                   alt="NAHM orientation and classroom training"
                   className="absolute inset-0 w-full h-full object-cover"
                   initial={shouldReduceMotion ? undefined : { scale: 1.08 }}
