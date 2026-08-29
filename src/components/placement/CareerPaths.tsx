@@ -48,7 +48,7 @@ export default function CareerPaths() {
               >
                 <div className="h-full overflow-hidden relative">
                   <motion.img
-                    src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
+                    src="/where-our-go.jpeg"
                     alt="Hospitality career opportunities"
                     className="w-full h-full object-cover"
                     initial={shouldReduceMotion ? undefined : { scale: 1.08 }}
@@ -56,7 +56,7 @@ export default function CareerPaths() {
                     viewport={vp}
                     transition={{ duration: 1.5, ease: EASE }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] via-[#0a192f]/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] via-[#0a192f]/5 to-transparent" />
                 </div>
                 <div className="absolute bottom-0 inset-x-0 p-5 sm:p-7">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#c59b27] text-[#0a192f] text-xs font-bold uppercase tracking-wider mb-2.5">

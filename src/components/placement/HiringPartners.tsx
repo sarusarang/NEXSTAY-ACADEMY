@@ -7,26 +7,21 @@ import type { LogoItem } from '@/components/LogoLoop';
    Format: https://logo.clearbit.com/<domain>
 ── */
 const PARTNERS: LogoItem[] = [
-  { title: 'Taj Hotels',    src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',       alt: 'Taj Hotels' },
-  { title: 'Marriott',      src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',        alt: 'Marriott' },
-  { title: 'Hilton',        src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',          alt: 'Hilton Hotels' },
-  { title: 'Hyatt',         src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',           alt: 'Hyatt' },
-  { title: 'Accor',         src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',           alt: 'Accor Hotels' },
-  { title: 'The Oberoi',    src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',    alt: 'The Oberoi' },
-  { title: 'Radisson',      src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Radisson Hotels' },
-  { title: 'ITC Hotels',    src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',      alt: 'ITC Hotels' },
-  { title: 'Novotel',       src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',        alt: 'Novotel' },
-  { title: 'Lemon Tree',    src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Lemon Tree Hotels' },
+  { title: 'Taj Hotels', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Taj Hotels' },
+  { title: 'Marriott', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Marriott' },
+  { title: 'Hilton', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Hilton Hotels' },
+  { title: 'Hyatt', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Hyatt' },
+  { title: 'Accor', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Accor Hotels' },
+  { title: 'The Oberoi', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'The Oberoi' },
+  { title: 'Radisson', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Radisson Hotels' },
+  { title: 'ITC Hotels', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'ITC Hotels' },
+  { title: 'Novotel', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Novotel' },
+  { title: 'Lemon Tree', src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Lemon Tree Hotels' },
 ];
 
 const PARTNERS_ROW2: LogoItem[] = [
-  { title: 'Club Mahindra',   src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',  alt: 'Club Mahindra' },
-  { title: 'Crowne Plaza',    src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',   alt: 'Crowne Plaza' },
-  { title: 'Holiday Inn',     src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',    alt: 'Holiday Inn' },
-  { title: 'Sheraton',        src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',      alt: 'Sheraton' },
-  { title: 'Best Western',    src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',   alt: 'Best Western' },
-  { title: 'Wyndham',         src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',       alt: 'Wyndham' },
-  { title: 'Four Seasons',    src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',   alt: 'Four Seasons' },
+  { title: 'NSDC', src: '/Affiliated-1.png', alt: 'NSDC' },
+  { title: 'THSC', src: '/Affiliated-2.png', alt: 'THSC' },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -74,7 +69,7 @@ export default function HiringPartners() {
           <div className="hp-diag-frame absolute inset-0 bg-gradient-to-b from-[#E7C77E] via-[#C6A15B] to-[#8f7238]" />
 
           <motion.img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+            src="/where-our-land.jpeg"
             alt="Luxury hotel lobby where NAHM graduates are placed"
             variants={shouldReduceMotion ? undefined : imageVariants}
             initial="hidden"
@@ -152,8 +147,8 @@ export default function HiringPartners() {
               className="mt-6 grid grid-cols-3 divide-x divide-white/[0.08] sm:mt-8"
             >
               {[
-                { stat: '100%',      label: 'Placement Rate' },
-                { stat: '50+',       label: 'Partner Hotels' },
+                { stat: '100%', label: 'Placement Rate' },
+                { stat: '50+', label: 'Partner Hotels' },
                 { stat: 'Pan-India', label: '& International' },
               ].map(({ stat, label }) => (
                 <div key={stat} className="px-3 first:pl-0 sm:px-4">

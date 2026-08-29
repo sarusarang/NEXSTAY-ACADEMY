@@ -99,7 +99,7 @@ export default function AboutCTA() {
           {/* Right image */}
           <div className="hidden lg:block lg:col-span-5 relative self-stretch overflow-hidden">
             <motion.img
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+              src="/Begin-Your-Journey.jpeg"
               alt="Nexstay Academy Trainees in Live Hotel Environment"
               className="absolute inset-0 w-full h-full object-cover"
               initial={shouldReduceMotion ? undefined : { scale: 1.1, opacity: 0 }}

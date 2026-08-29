@@ -36,7 +36,7 @@ export default function PlacementOverview() {
           transition={{ duration: 1, ease: EASE }}
         >
           <motion.img
-            src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1600&q=80"
+            src="/100%-job.jpeg"
             alt="Hospitality graduates at a luxury hotel"
             className="absolute inset-0 h-full w-full object-cover object-center"
             initial={shouldReduceMotion ? undefined : { scale: 1.1 }}
