@@ -4,17 +4,9 @@ import { Link } from 'react-router-dom';
 
 const videoList = [
   {
-    url: "https://assets.mixkit.co/videos/31412/31412-720.mp4",
-    poster: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+    url: "/NEXSTAY Web Ad.mp4",
+    poster: "/about-banner.jpeg"
   },
-  {
-    url: "https://assets.mixkit.co/videos/42823/42823-720.mp4",
-    poster: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    url: "https://assets.mixkit.co/videos/34487/34487-720.mp4",
-    poster: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
-  }
 ];
 
 export const HeroSection: React.FC = () => {
