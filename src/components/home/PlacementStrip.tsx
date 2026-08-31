@@ -17,16 +17,18 @@ const IMAGE_URL =
 ========================================================= */
 
 const PARTNERS: LogoItem[] = [
-    { title: 'Taj Hotels',   src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',       alt: 'Taj Hotels' },
-    { title: 'Marriott',     src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',        alt: 'Marriott' },
-    { title: 'Hilton',       src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',          alt: 'Hilton' },
-    { title: 'Hyatt',        src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',           alt: 'Hyatt' },
-    { title: 'Accor',        src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',           alt: 'Accor' },
-    { title: 'The Oberoi',   src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',    alt: 'The Oberoi' },
-    { title: 'Radisson',     src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Radisson' },
-    { title: 'ITC Hotels',   src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',      alt: 'ITC Hotels' },
-    { title: 'Novotel',      src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg',        alt: 'Novotel' },
-    { title: 'Lemon Tree',   src: 'https://images.examples.com/wp-content/uploads/2017/03/business-Logo.jpg', alt: 'Lemon Tree' },
+    { title: 'CLIENTS-01',   src: '/CLIENTS-01.png',       alt: 'CLIENTS-01' },
+    { title: 'CLIENTS-02',     src: '/CLIENTS-02.png',        alt: 'CLIENTS-02' },
+    { title: 'CLIENTS-03',       src: '/CLIENTS-03.png',          alt: 'CLIENTS-03' },
+    { title: 'CLIENTS-04',        src: '/CLIENTS-04.png',           alt: 'CLIENTS-04' },
+    { title: 'CLIENTS-05',        src: '/CLIENTS-05.png',           alt: 'CLIENTS-05' },
+    { title: 'CLIENTS-06',   src: '/CLIENTS-06.png',    alt: 'CLIENTS-06' },
+    { title: 'CLIENTS-07',     src: '/CLIENTS-07.png', alt: 'CLIENTS-07' },
+    { title: 'CLIENTS-08',   src: '/CLIENTS-08.png',      alt: 'CLIENTS-08' },
+    { title: 'CLIENTS-09',      src: '/CLIENTS-09.png',        alt: 'CLIENTS-09' },
+    { title: 'CLIENTS-10',   src: '/CLIENTS-10.png', alt: 'CLIENTS-10' },
+    { title: 'CLIENTS-11',   src: '/CLIENTS-11.png', alt: 'CLIENTS-11' },
+    { title: 'CLIENTS-12',   src: '/CLIENTS-12.png', alt: 'CLIENTS-12' },
 ];
 
 /* =========================================================
@@ -224,7 +226,7 @@ export default function PlacementsStrip() {
                                     speed={34}
                                     hoverSpeed={8}
                                     direction="left"
-                                    logoHeight={50}
+                                    logoHeight={70}
                                     gap={30}
                                     scaleOnHover
                                     fadeOut
@@ -250,7 +252,7 @@ export default function PlacementsStrip() {
                                     speed={24}
                                     hoverSpeed={8}
                                     direction="right"
-                                    logoHeight={50}
+                                    logoHeight={60}
                                     gap={40}
                                     fadeOut
                                     fadeOutColor="#071322"
