@@ -45,14 +45,29 @@ export const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: [0.25, 1, 0.5, 1] }}
           >
-            <Link to="/" className="flex items-center group">
-              <motion.img
+            <Link to="/" className="flex items-center group relative">
+              <motion.div
                 whileHover={{ scale: 1.04 }}
                 transition={{ type: 'spring', stiffness: 280, damping: 18 }}
-                src="/nav-logo-new.png"
-                alt="Nexstay Academy"
-                className="h-11 sm:h-12 md:h-12 w-auto object-contain"
-              />
+                className="relative h-11 sm:h-12 md:h-12 flex items-center"
+              >
+                {/* Logo when at top */}
+                <img
+                  src="/NHAM BLUE LOGO.png"
+                  alt="Nexstay Academy"
+                  className={`h-11 sm:h-12 md:h-12 w-auto object-contain transition-opacity duration-300 ${
+                    scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'
+                  }`}
+                />
+                {/* Logo when scrolled */}
+                <img
+                  src="/nav-logo-new.png"
+                  alt="Nexstay Academy"
+                  className={`h-11 sm:h-12 md:h-12 w-auto object-contain absolute left-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 ${
+                    scrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                  }`}
+                />
+              </motion.div>
             </Link>
           </motion.div>
 
