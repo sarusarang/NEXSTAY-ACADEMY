@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-4 space-y-5 sm:space-y-6">
             <Link to="/" className="inline-block group">
               <img
-                src="/nav-logo-new.png"
+                src="/LOGO_WHITE.png"
                 alt="Nexstay Academy"
                 className="h-12 sm:h-10 md:h-12 w-auto object-contain"
               />
