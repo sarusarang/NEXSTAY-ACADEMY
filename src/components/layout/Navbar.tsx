@@ -53,7 +53,7 @@ export const Navbar: React.FC = () => {
               >
                 {/* Logo when at top */}
                 <img
-                  src="/NHAM BLUE LOGO.png"
+                  src="/LOGO_BLUE.png"
                   alt="Nexstay Academy"
                   className={`h-11 sm:h-12 md:h-12 w-auto object-contain transition-opacity duration-300 ${
                     scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'
@@ -61,7 +61,7 @@ export const Navbar: React.FC = () => {
                 />
                 {/* Logo when scrolled */}
                 <img
-                  src="/nav-logo-new.png"
+                  src="/LOGO_WHITE.png"
                   alt="Nexstay Academy"
                   className={`h-11 sm:h-12 md:h-12 w-auto object-contain absolute left-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 ${
                     scrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
