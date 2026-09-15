@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
               >
                 {/* Blue Logo (on desktop when at top on Home page against the white split background) */}
                 <img
-                  src="/NHAM BLUE LOGO.png"
+                  src="/LOGO_BLUE.png"
                   alt="Nexstay Academy"
                   className={`h-11 sm:h-12 md:h-12 w-auto object-contain transition-opacity duration-300 ${
                     showBlueLogo ? 'hidden lg:block opacity-100' : 'opacity-0 pointer-events-none hidden'
@@ -64,7 +64,7 @@ export const Navbar: React.FC = () => {
                 />
                 {/* Updated Logo (on all pages, mobile, and scrolled state) */}
                 <img
-                  src="/new-navlogo-updated.png"
+                  src="/LOGO_WHITE.png"
                   alt="Nexstay Academy"
                   className={`h-11 sm:h-12 md:h-12 w-auto object-contain transition-opacity duration-300 ${
                     showBlueLogo
