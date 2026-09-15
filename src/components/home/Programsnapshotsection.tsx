@@ -44,14 +44,14 @@ const imageReveal: Variants = {
 };
 
 const HIGHLIGHTS = [
-    "Front Office",
-    "Housekeeping",
-    "F&B Service",
-    "F&B Production",
-    "Sales & Marketing",
+    "Hospitality Management",
+    "Front Office Management",
+    "Housekeeping Management",
+    "Food & Beverage Service",
+    "Food & Beverage Production",
+    "Hospitality Sales & Marketing",
     "Information Technology",
-    "Human Resources",
-    "Placement Training Sessions",
+    "Human Resources Management",
 ];
 
 const PHASES = [

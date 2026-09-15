@@ -56,13 +56,13 @@ export default function AboutWhoWeAre() {
             className="absolute left-5 top-5 sm:left-8 sm:top-7 lg:left-10 lg:top-9"
           >
             <style>{`@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');`}</style>
-            <p style={{ fontFamily: 'Allura, cursive', fontSize: 'clamp(22px, 4.5vw, 40px)', lineHeight: 1.05, color: '#F1DFAE' }}>
+            <p style={{ fontFamily: 'Allura, cursive', fontSize: 'clamp(22px, 4.5vw, 40px)', lineHeight: 1.05, color: '#FFFFFF', textShadow: '0 2px 10px rgba(0,0,0,0.7)' }}>
               Real-World Hospitality
             </p>
-            <p style={{ fontFamily: 'Allura, cursive', fontSize: 'clamp(18px, 3.5vw, 32px)', lineHeight: 1.05, color: '#F1DFAE' }}>
+            <p style={{ fontFamily: 'Allura, cursive', fontSize: 'clamp(18px, 3.5vw, 32px)', lineHeight: 1.05, color: '#FFFFFF', textShadow: '0 2px 10px rgba(0,0,0,0.7)' }}>
               Built by Hoteliers
             </p>
-            <span className="mt-1.5 block h-px w-28 bg-[#C6A15B]/70 sm:w-32" />
+            <span className="mt-1.5 block h-px w-28 bg-[#E5BE58] sm:w-32" />
           </motion.div>
 
           {/* Badge */}

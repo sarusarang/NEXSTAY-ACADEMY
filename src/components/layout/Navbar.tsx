@@ -26,6 +26,9 @@ export const Navbar: React.FC = () => {
   // Close menu on route change
   useEffect(() => { setIsMobileMenuOpen(false); }, [location.pathname]);
 
+  const isHome = location.pathname === '/';
+  const showBlueLogo = isHome && !scrolled;
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 w-full">
@@ -51,20 +54,22 @@ export const Navbar: React.FC = () => {
                 transition={{ type: 'spring', stiffness: 280, damping: 18 }}
                 className="relative h-11 sm:h-12 md:h-12 flex items-center"
               >
-                {/* Logo when at top */}
+                {/* Blue Logo (on desktop when at top on Home page against the white split background) */}
                 <img
                   src="/LOGO_BLUE.png"
                   alt="Nexstay Academy"
                   className={`h-11 sm:h-12 md:h-12 w-auto object-contain transition-opacity duration-300 ${
-                    scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'
+                    showBlueLogo ? 'hidden lg:block opacity-100' : 'opacity-0 pointer-events-none hidden'
                   }`}
                 />
-                {/* Logo when scrolled */}
+                {/* Updated Logo (on all pages, mobile, and scrolled state) */}
                 <img
                   src="/LOGO_WHITE.png"
                   alt="Nexstay Academy"
-                  className={`h-11 sm:h-12 md:h-12 w-auto object-contain absolute left-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 ${
-                    scrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                  className={`h-11 sm:h-12 md:h-12 w-auto object-contain transition-opacity duration-300 ${
+                    showBlueLogo
+                      ? 'block lg:hidden lg:opacity-0 lg:pointer-events-none'
+                      : 'opacity-100'
                   }`}
                 />
               </motion.div>
@@ -90,7 +95,7 @@ export const Navbar: React.FC = () => {
                 >
                   <Link
                     to={item.href}
-                    className={`relative px-2.5 xl:px-3 py-1.5 text-[12px] xl:text-[13px] font-bold tracking-[0.06em] uppercase whitespace-nowrap transition-colors duration-200 block drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)] ${
+                    className={`relative px-2.5 xl:px-3 py-1.5 font-['Bebas_Neue','Outfit',sans-serif] text-[17px] xl:text-[17px] font-normal tracking-[0.08em] uppercase whitespace-nowrap transition-colors duration-200 block drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)] ${
                       isActive ? 'text-[#c59b27]' : 'text-white/90 hover:text-white'
                     }`}
                   >
@@ -147,7 +152,7 @@ export const Navbar: React.FC = () => {
             >
               <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
                 <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
-                  <img src="/nav-logo-new.png" alt="Nexstay Academy" className="h-10 w-auto object-contain" />
+                  <img src="/new-navlogo-updated.png" alt="Nexstay Academy" className="h-10 w-auto object-contain" />
                 </Link>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -170,7 +175,7 @@ export const Navbar: React.FC = () => {
                       <Link
                         to={item.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`block py-3 px-2 font-['Outfit'] font-bold text-xl tracking-wide uppercase border-b border-white/5 transition-all ${
+                        className={`block py-3 px-2 font-['Bebas_Neue','Outfit',sans-serif] text-2xl tracking-[0.06em] uppercase border-b border-white/5 transition-all ${
                           isActive
                             ? 'text-[#c59b27] pl-4 border-l-2 border-l-[#c59b27]'
                             : 'text-white/75 hover:text-white hover:pl-4'

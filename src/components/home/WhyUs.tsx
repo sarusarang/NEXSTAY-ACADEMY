@@ -118,9 +118,8 @@ export default function WhyChooseNAHM() {
             className="relative w-full overflow-hidden bg-white py-10 sm:py-8 lg:py-14"
         >
             <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
-        .font-display { font-family: 'Fraunces', ui-serif, Georgia, serif; }
-        .font-body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+        .font-display { font-family: 'Bebas Neue', 'Outfit', sans-serif; }
+        .font-body { font-family: 'Outfit', sans-serif; }
       `}</style>
 
             {/* ambient slow-drifting glow */}
@@ -179,9 +178,9 @@ export default function WhyChooseNAHM() {
                             <span className="font-body text-xs font-medium uppercase tracking-[0.22em] text-[#C6A15B] sm:text-sm">
                                 Why choose NAHM
                             </span>
-                            <p className="font-display mt-4 text-2xl font-semibold leading-[1.15] text-[#F3ECDD] sm:mt-5 sm:text-3xl lg:text-[2.1rem]">
+                            <h2 className="font-['Bebas_Neue','Outfit',sans-serif] mt-4 text-3xl sm:text-4xl lg:text-[2.6rem] uppercase leading-[0.98] tracking-tight text-[#F3ECDD] sm:mt-5">
                                 This isn&apos;t just classroom training.
-                            </p>
+                            </h2>
                         </motion.div>
 
                         {/* FEATURES CARD */}

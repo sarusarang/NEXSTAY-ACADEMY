@@ -2,22 +2,35 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const videoList = [
-  {
-    url: "/NEXSTAY Web Ad.mp4",
-    poster: "/about-banner.jpeg"
-  },
-];
-
 export const HeroSection: React.FC = () => {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 1024;
+    }
+    return false;
+  });
+
+  const videoRef = React.useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentVideoIndex((prev) => (prev + 1) % videoList.length);
-    }, 6000);
-    return () => clearInterval(interval);
+    const mql = window.matchMedia('(max-width: 1023px)');
+    const updateMatch = (e: MediaQueryListEvent | MediaQueryList) => {
+      setIsMobile(e.matches);
+    };
+
+    updateMatch(mql);
+    const listener = (e: MediaQueryListEvent) => updateMatch(e);
+    mql.addEventListener('change', listener);
+    return () => mql.removeEventListener('change', listener);
   }, []);
+
+  const videoSrc = isMobile ? '/home-banner-mob.mp4' : '/home-banner-new.mp4';
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, [videoSrc]);
 
   return (
     <section className="relative w-full h-screen min-h-[600px] bg-black overflow-hidden flex flex-col">
@@ -26,16 +39,18 @@ export const HeroSection: React.FC = () => {
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
-            key={currentVideoIndex}
-            initial={{ opacity: 0, scale: 1.05 }}
+            key={videoSrc}
+            initial={{ opacity: 0, scale: 1.03 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             className="absolute inset-0 w-full h-full"
           >
             <video
-              src={videoList[currentVideoIndex].url}
-              poster={videoList[currentVideoIndex].poster}
+              ref={videoRef}
+              key={videoSrc}
+              src={videoSrc}
+              poster="/about-banner.jpeg"
               autoPlay
               loop
               muted
@@ -92,7 +107,7 @@ export const HeroSection: React.FC = () => {
         >
           <div className="flex flex-col whitespace-nowrap">
             <span className="font-extrabold uppercase tracking-wider text-[#0a192f] text-[11px]">ADMISSIONS OPEN</span>
-            <span className="text-slate-500 font-medium text-[11px] mt-0.5">Batch 2025-26</span>
+            <span className="text-slate-500 font-medium text-[11px] mt-0.5">Batch 2026-27</span>
           </div>
           <div className="h-7 w-[1px] bg-slate-300 flex-shrink-0" />
           <div className="flex flex-col whitespace-nowrap">
@@ -167,7 +182,7 @@ export const HeroSection: React.FC = () => {
         >
           <div className="flex flex-col">
             <span className="font-extrabold uppercase tracking-wider text-white text-[10px]">ADMISSIONS OPEN</span>
-            <span className="text-white/60 font-medium text-[10px] mt-0.5">Batch 2025-26</span>
+            <span className="text-white/60 font-medium text-[10px] mt-0.5">Batch 2026-27</span>
           </div>
           <div className="h-6 w-[1px] bg-white/30 flex-shrink-0" />
           <div className="flex flex-col">

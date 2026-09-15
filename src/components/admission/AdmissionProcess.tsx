@@ -8,7 +8,7 @@ const admissionSteps = [
   { icon: Users, title: 'Counselling Session', desc: 'Speak 1-on-1 with an experienced academic counselor in person at our Calicut campus, via phone, or on video call.', tag: 'Step 02' },
   { icon: FileCheck2, title: 'Document Verification', desc: 'Submit your educational certificates (10th/12th mark sheets), government photo ID, and passport photographs.', tag: 'Step 03' },
   { icon: Landmark, title: 'Seat Confirmation & Fee', desc: 'Pay the one-time admission fee or select your convenient installment plan to lock in your confirmed batch seat.', tag: 'Step 04' },
-  { icon: Award, title: 'Orientation & Classes', desc: 'Receive your uniform and professional kit, attend campus orientation, and start your simulation lab training.', tag: 'Step 05' },
+  { icon: Award, title: 'Orientation & Classes', desc: 'Attend campus orientation, meet your batch, and dive straight into simulation lab training from Day 1.', tag: 'Step 05' },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;

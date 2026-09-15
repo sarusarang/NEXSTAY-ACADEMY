@@ -108,11 +108,11 @@ export default function PageHero({
         animate="show"
         className="relative z-10 flex h-full flex-col items-center justify-center px-5 sm:px-10 text-center"
       >
-        {/* Title */}
+        {/* Title matching hero banner font */}
         <motion.h1
           variants={fadeUp}
-          className="font-['Outfit'] font-semibold uppercase text-white leading-[1.1] tracking-wide"
-          style={{ fontSize: "clamp(1.7rem, 3.8vw, 3rem)" }}
+          className="font-['Bebas_Neue','Outfit',sans-serif] uppercase text-white leading-[0.95] tracking-tight"
+          style={{ fontSize: "clamp(2.5rem, 6vw, 5.2rem)" }}
         >
           {title}
         </motion.h1>

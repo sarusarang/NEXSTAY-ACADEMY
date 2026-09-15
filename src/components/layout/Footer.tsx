@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-4 space-y-5 sm:space-y-6">
             <Link to="/" className="inline-block group">
               <img
-                src="/LOGO_WHITE.png"
+                src="/new-navlogo-updated.png"
                 alt="Nexstay Academy"
                 className="h-12 sm:h-10 md:h-12 w-auto object-contain"
               />
@@ -235,7 +235,7 @@ export const Footer: React.FC = () => {
                 to="/admission"
                 className="group w-full max-w-[260px] inline-flex items-center justify-between px-5 py-3 rounded-full bg-[#e5be58] hover:bg-[#dfb13c] text-[#071322] font-['Outfit'] font-extrabold text-xs tracking-wider uppercase transition-all shadow-[0_4px_16px_rgba(229,190,88,0.25)] hover:scale-[1.02] active:scale-95"
               >
-                <span>Apply For 2025 Intake</span>
+                <span>Apply For 2026–27 Intake</span>
                 <span className="w-6 h-6 rounded-full bg-[#071322] text-[#e5be58] flex items-center justify-center transition-transform group-hover:translate-x-0.5">
                   <ArrowRight className="w-3.5 h-3.5" />
                 </span>
@@ -298,17 +298,28 @@ export const Footer: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* BOTTOM METADATA & POLICIES ROW */}
-        <div className="w-full pt-2 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-          <div>
+        {/* BOTTOM METADATA, POLICIES & POWERED BY ROW */}
+        <div className="w-full pt-4 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 items-center gap-4 text-xs text-slate-400">
+          <div className="text-center md:text-left">
             © 2026 Nexstay Academy of Hotel Management. All rights reserved.
           </div>
-          <div className="flex items-center gap-3 sm:gap-4 text-xs flex-wrap justify-center">
-            <Link to="/about" className="hover:text-white transition-colors">Privacy Policy</Link>
+
+          <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <span className="text-slate-600">•</span>
-            <Link to="/about" className="hover:text-white transition-colors">Terms & Conditions</Link>
-            <span className="text-slate-600">•</span>
-            <Link to="/about" className="hover:text-white transition-colors">Mandatory Disclosures</Link>
+            <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms & Conditions</Link>
+          </div>
+
+          <div className="flex items-center justify-center md:justify-end gap-1.5">
+            <span>Powered by</span>
+            <a
+              href="https://extechnology.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#e5be58] hover:text-[#dfb13c] font-bold hover:underline transition-colors inline-flex items-center gap-1 group"
+            >
+              <span>EX Technology</span>
+            </a>
           </div>
         </div>
 

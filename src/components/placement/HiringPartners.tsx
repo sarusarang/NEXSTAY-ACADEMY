@@ -47,6 +47,20 @@ const imageVariants: Variants = {
 export default function HiringPartners() {
   const shouldReduceMotion = useReducedMotion();
 
+  const renderLogoCard = (item: LogoItem) => {
+    if ('node' in item) return item.node;
+    return (
+      <div className="flex h-12 sm:h-14 min-w-[110px] sm:min-w-[130px] items-center justify-center rounded-xl bg-white px-3.5 sm:px-4 py-1.5 shadow-md border border-white/20 transition-transform duration-300 group-hover/item:scale-105">
+        <img
+          src={item.src}
+          alt={item.alt ?? item.title ?? 'Partner Logo'}
+          className="max-h-8 sm:max-h-9 w-auto object-contain pointer-events-none select-none"
+          loading="lazy"
+        />
+      </div>
+    );
+  };
+
   return (
     <section className="relative w-full overflow-hidden bg-[#071322]">
 
@@ -136,22 +150,15 @@ export default function HiringPartners() {
               </h2>
             </motion.div>
 
-            <motion.p
-              variants={itemVariants}
-              className="mt-3 max-w-[540px] font-['Outfit'] text-sm leading-relaxed text-slate-300 sm:text-[15px]"
-            >
-              Our graduates are placed at India's most iconic luxury hotel brands and top international hospitality chains, with a dedicated campus placement cell to support every student.
-            </motion.p>
-
-            {/* Stats row */}
+            {/* Stat Row */}
             <motion.div
               variants={itemVariants}
-              className="mt-6 grid grid-cols-3 divide-x divide-white/[0.08] sm:mt-8"
+              className="mt-6 flex divide-x divide-white/[0.08] sm:mt-8"
             >
               {[
-                { stat: '100%', label: 'Placement Rate' },
-                { stat: '50+', label: 'Partner Hotels' },
-                { stat: 'Pan-India', label: '& International' },
+                { stat: '100%', label: 'Placement Support' },
+                { stat: '50+',  label: 'Hiring Partners'   },
+                { stat: '100%',  label: 'Practical Learning' },
               ].map(({ stat, label }) => (
                 <div key={stat} className="px-3 first:pl-0 sm:px-4">
                   <div className="font-['Bebas_Neue'] text-xl text-[#C6A15B] sm:text-2xl md:text-3xl">{stat}</div>
@@ -163,8 +170,8 @@ export default function HiringPartners() {
             {/* ── Logo loop 1 ── */}
             <motion.div variants={itemVariants} className="mt-7 sm:mt-10">
               <div className="mb-3 flex items-center gap-2.5 sm:gap-3">
-                <span className="h-px w-6 bg-[#C6A15B]/60 sm:w-8" />
-                <span className="font-['Outfit'] text-[11px] font-semibold uppercase tracking-[0.25em] text-white/45 sm:text-[13px]">
+                <span className="h-px w-6 bg-[#C6A15B] sm:w-8" />
+                <span className="font-['Outfit'] text-[11px] font-bold uppercase tracking-[0.25em] text-[#E8D19F] sm:text-[13px]">
                   Our Hiring Partners
                 </span>
               </div>
@@ -174,11 +181,12 @@ export default function HiringPartners() {
                   speed={34}
                   hoverSpeed={8}
                   direction="left"
-                  logoHeight={52}
-                  gap={40}
+                  logoHeight={56}
+                  gap={20}
                   scaleOnHover
                   fadeOut
                   fadeOutColor="#071322"
+                  renderItem={renderLogoCard}
                   ariaLabel="Hiring partner logos"
                 />
               </div>
@@ -187,11 +195,11 @@ export default function HiringPartners() {
             {/* ── Logo loop 2 ── */}
             <motion.div variants={itemVariants} className="mt-5 sm:mt-8">
               <div className="mb-3.5 flex items-center gap-3 sm:gap-4">
-                <span className="h-px flex-1 bg-white/[0.09]" />
-                <span className="font-['Outfit'] whitespace-nowrap text-[11px] font-medium text-white/50 sm:text-[13px]">
+                <span className="h-px flex-1 bg-white/[0.15]" />
+                <span className="font-['Outfit'] whitespace-nowrap text-[11px] font-semibold text-white/80 sm:text-[13px]">
                   Affiliated &amp; Recognized Nationally
                 </span>
-                <span className="h-px flex-1 bg-white/[0.09]" />
+                <span className="h-px flex-1 bg-white/[0.15]" />
               </div>
               <div className="py-1.5 transition-opacity duration-300 hover:opacity-90">
                 <LogoLoop
@@ -199,10 +207,11 @@ export default function HiringPartners() {
                   speed={24}
                   hoverSpeed={8}
                   direction="right"
-                  logoHeight={52}
-                  gap={40}
+                  logoHeight={56}
+                  gap={24}
                   fadeOut
                   fadeOutColor="#071322"
+                  renderItem={renderLogoCard}
                   ariaLabel="Affiliated partner logos"
                 />
               </div>

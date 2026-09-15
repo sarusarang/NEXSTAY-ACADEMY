@@ -62,7 +62,7 @@ export default function AdmissionCTA() {
               transition={{ duration: 0.8, delay: 0.14, ease: EASE }}
               className="text-slate-300 text-sm sm:text-base max-w-lg mb-8 leading-relaxed font-['Outfit']"
             >
-              Direct admissions are now open for the 2025–26 batch. Connect directly with our counseling desk via WhatsApp or phone.
+              Direct admissions are now open for the 2026–27 batch. Connect directly with our counseling desk via WhatsApp or phone.
             </motion.p>
 
             <motion.div

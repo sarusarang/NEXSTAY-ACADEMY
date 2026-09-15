@@ -12,7 +12,7 @@ interface AdmissionBadgeRowProps {
   title: string;
   description?: string;
   items: BadgeItem[];
-  columns?: 3 | 4;
+  columns?: 1 | 2 | 3 | 4;
   theme?: 'light' | 'navy';
 }
 
@@ -101,8 +101,14 @@ export default function AdmissionBadgeRow({
 
         {/* Badges Grid */}
         <div
-          className={`grid grid-cols-1 sm:grid-cols-2 ${
-            columns === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
+          className={`grid grid-cols-1 ${
+            columns === 1
+              ? 'max-w-xl'
+              : columns === 2
+              ? 'sm:grid-cols-2 max-w-4xl'
+              : columns === 4
+              ? 'sm:grid-cols-2 lg:grid-cols-4'
+              : 'sm:grid-cols-2 lg:grid-cols-3'
           } gap-5 sm:gap-6 lg:gap-8`}
         >
           {items.map((item, idx) => {

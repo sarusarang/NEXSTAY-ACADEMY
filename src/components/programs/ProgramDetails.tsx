@@ -50,10 +50,6 @@ const SUBJECTS = [
   { num: '06', label: 'Hospitality Sales & Marketing' },
   { num: '07', label: 'Information Technology' },
   { num: '08', label: 'Human Resources Management' },
-  { num: '09', label: 'Placement Training Sessions' },
-  { num: '10', label: 'Language Training (Spoken English)' },
-  { num: '11', label: 'Personality Development' },
-  { num: '12', label: 'Grooming Standards' },
 ];
 
 const GAINS = [
@@ -231,7 +227,7 @@ export default function ProgramDetails() {
               What You'll <span className="text-[#C6A15B]">Study</span>
             </motion.h2>
             <motion.p variants={iV} className="mt-3 max-w-xl font-['Outfit'] text-sm text-white/55 leading-relaxed sm:text-[15px]">
-              A comprehensive mix of hospitality theory, live operations and professional development — 12 subjects across the full 15-month program.
+              A comprehensive mix of hospitality theory, live operations and professional development — 8 core disciplines across the full 15-month program.
             </motion.p>
           </motion.div>
 
