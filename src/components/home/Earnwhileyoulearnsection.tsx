@@ -25,9 +25,8 @@ export default function StudentRewardsBanner() {
     return (
         <section className="relative w-full overflow-hidden bg-[#071322]">
             <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
-        .font-headline { font-family: 'Oswald', ui-sans-serif, sans-serif; }
-        .font-body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+        .font-headline { font-family: 'Bebas Neue', 'Outfit', sans-serif; }
+        .font-body { font-family: 'Outfit', sans-serif; }
       `}</style>
 
             <div className="relative flex w-full flex-col lg:flex-row lg:min-h-[640px]">
@@ -89,7 +88,7 @@ export default function StudentRewardsBanner() {
 
                         <motion.h2
                             variants={item}
-                            className="font-headline mt-4 text-[clamp(1.9rem,7vw,3.4rem)] font-bold uppercase leading-[1.05] tracking-tight text-white sm:mt-6"
+                            className="font-['Bebas_Neue','Outfit',sans-serif] mt-4 text-4xl sm:text-6xl lg:text-7xl font-normal uppercase leading-[0.95] tracking-tight text-white sm:mt-6"
                         >
                             Earn while you learn
                         </motion.h2>

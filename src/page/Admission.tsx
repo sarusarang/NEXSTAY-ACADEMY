@@ -7,28 +7,21 @@ import AdmissionCTA from '@/components/admission/AdmissionCTA';
 import {
   Shirt,
   Briefcase,
-  Landmark,
   FileStack,
   IdCard,
   Image as ImageIcon,
-  FileCheck2,
 } from 'lucide-react';
 
 const included = [
   {
     icon: Shirt,
-    title: 'Uniforms & Practical Kits',
-    subtitle: 'Chef coats, front office blazers, grooming kit, and training materials.',
+    title: 'Professional Uniforms',
+    subtitle: 'Chef coats, front office blazers, and grooming standards kit.',
   },
   {
     icon: Briefcase,
     title: '100% Placement Training',
     subtitle: 'Resume workshops, mock interviews, and 5-star hotel placement mapping.',
-  },
-  {
-    icon: Landmark,
-    title: 'Education Loan Support',
-    subtitle: 'Complete guidance and documentation support for 0% interest EMI options.',
   },
 ];
 
@@ -47,11 +40,6 @@ const documents = [
     icon: ImageIcon,
     title: 'Passport Photographs',
     subtitle: '4 Recent Color Passport-sized Photos',
-  },
-  {
-    icon: FileCheck2,
-    title: 'Transfer Certificate',
-    subtitle: 'TC or Migration Certificate from previous institution',
   },
 ];
 
@@ -73,9 +61,9 @@ export default function Admission() {
         <AdmissionBadgeRow
           eyebrow="What's Included"
           title="Beyond The Classroom"
-          description="Every enrollment includes all practical kits, certifications, and placement assistance with zero hidden fees."
+          description="Every enrollment includes professional uniforms, certifications, and placement assistance with zero hidden fees."
           items={included}
-          columns={3}
+          columns={2}
         />
       </div>
 

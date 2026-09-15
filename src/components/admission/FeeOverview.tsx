@@ -129,8 +129,26 @@ export default function FeeOverview() {
               variants={fadeUp(0.1)}
               className="mt-3 sm:mt-4 text-xs sm:text-sm md:text-[15px] leading-relaxed text-slate-300 max-w-xl font-['Outfit']"
             >
-              No hidden charges, no surprise add-ons — transparent pricing covering uniform kit, practical labs, and placement training.
+              No hidden charges, no surprise add-ons — transparent pricing covering uniform kit, course materials, and placement training.
             </motion.p>
+
+            {/* Benefits included */}
+            <motion.div variants={fadeUp(0.12)} className="mt-4 sm:mt-5 flex flex-wrap gap-2">
+              {[
+                '✓ Uniform Kit',
+                '✓ 100% Placement Training',
+                '✓ 100% Job Assistance',
+                '✓ Monthly Stipend During Training',
+                '✓ Industry Certifications',
+              ].map((benefit) => (
+                <span
+                  key={benefit}
+                  className="inline-block rounded-full border border-[#c59b27]/40 bg-[#c59b27]/10 px-3 py-1 text-[11px] font-semibold text-[#e5be58] font-['Outfit']"
+                >
+                  {benefit}
+                </span>
+              ))}
+            </motion.div>
 
             {/* Fee table */}
             <motion.div
@@ -184,14 +202,14 @@ export default function FeeOverview() {
                 >
                   <div className="min-w-0">
                     <div className="text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#e5be58] mb-0.5">
-                      Total, With Hostel
+                      Total Course Fee (Without Hostel)
                     </div>
                     <div className="text-xs text-slate-300 whitespace-nowrap">
-                      {formatINR(totalWithoutHostel)} without optional hostel
+                      Optional Hostel: +{formatINR(25500)} ({formatINR(totalWithHostel)} with hostel)
                     </div>
                   </div>
                   <div className="font-['Outfit'] font-black text-xl sm:text-2xl md:text-3xl text-[#e5be58] flex-shrink-0 whitespace-nowrap tabular-nums text-right pl-2">
-                    {formatINR(totalWithHostel)}
+                    {formatINR(totalWithoutHostel)}
                   </div>
                 </motion.div>
               </motion.div>

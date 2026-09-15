@@ -84,14 +84,26 @@ export default function PlacementsStrip() {
         show: { opacity: 1, y: 0, transition: { duration: 1.05, ease: EASE } },
     };
 
+    const renderLogoCard = (item: LogoItem) => {
+        if ('node' in item) return item.node;
+        return (
+            <div className="flex h-12 sm:h-14 min-w-[110px] sm:min-w-[130px] items-center justify-center rounded-xl bg-white px-3.5 sm:px-4 py-1.5 shadow-md border border-white/20 transition-transform duration-300 group-hover/item:scale-105">
+                <img
+                    src={item.src}
+                    alt={item.alt ?? item.title ?? 'Partner Logo'}
+                    className="max-h-8 sm:max-h-9 w-auto object-contain pointer-events-none select-none"
+                    loading="lazy"
+                />
+            </div>
+        );
+    };
+
     return (
         <section className="relative w-full overflow-hidden bg-[#071322]">
             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
-
-                .font-display { font-family: 'Fraunces', ui-serif, Georgia, serif; }
-                .font-body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
-                .font-script { font-family: 'Allura', cursive; }
+                .font-display { font-family: 'Bebas Neue', 'Outfit', sans-serif; }
+                .font-body { font-family: 'Outfit', sans-serif; }
+                .font-script { font-family: 'Bebas Neue', 'Outfit', sans-serif; }
 
                 /* Diagonal chevron cut — only active at lg+ where the two
                    columns sit side by side. Below lg the image stays a
@@ -141,13 +153,13 @@ export default function PlacementsStrip() {
                         className="absolute left-5 top-5 sm:left-8 sm:top-7 lg:left-10 lg:top-9"
                     >
                         <p
-                            className="font-script leading-[1.05] text-[#F1DFAE]"
+                            className="font-['Bebas_Neue','Outfit',sans-serif] uppercase tracking-wider leading-[1.05] text-[#F1DFAE]"
                             style={{ fontSize: "clamp(22px, 4.2vw, 38px)" }}
                         >
                             Your Future
                         </p>
                         <p
-                            className="font-script leading-[1.05] text-[#F1DFAE]"
+                            className="font-['Bebas_Neue','Outfit',sans-serif] uppercase tracking-wider leading-[1.05] text-[#F1DFAE]"
                             style={{ fontSize: "clamp(22px, 4.2vw, 38px)" }}
                         >
                             Our Commitment
@@ -184,8 +196,8 @@ export default function PlacementsStrip() {
                         {/* HEADLINE */}
                         <motion.div variants={itemVariants} className="max-w-[660px]">
                             <h2
-                                className="font-display font-semibold leading-[1.18] tracking-[-0.02em] text-white"
-                                style={{ fontSize: "clamp(1.65rem, 1.15rem + 1.9vw, 2.5rem)" }}
+                                className="font-['Bebas_Neue','Outfit',sans-serif] uppercase leading-[1.02] tracking-tight text-white"
+                                style={{ fontSize: "clamp(2rem, 1.4rem + 2.5vw, 3.8rem)" }}
                             >
                                 <span className="text-[#C6A15B]">100%</span> Placement Assistance —{" "}
                                 <span className="text-white/90">India &amp; International Postings.</span>
@@ -214,8 +226,8 @@ export default function PlacementsStrip() {
                         {/* HIRING PARTNERS — LOGO LOOP */}
                         <motion.div variants={itemVariants} className="mt-7 sm:mt-12">
                             <div className="mb-3 flex items-center gap-2.5 sm:gap-3">
-                                <span className="h-px w-6 sm:w-8 bg-[#C6A15B]/60" />
-                                <span className="font-body text-[11.5px] font-semibold uppercase tracking-[0.25em] text-white/45 sm:text-[13px] sm:tracking-[0.3em]">
+                                <span className="h-px w-6 sm:w-8 bg-[#C6A15B]" />
+                                <span className="font-body text-[11.5px] font-bold uppercase tracking-[0.25em] text-[#E8D19F] sm:text-[13px] sm:tracking-[0.3em]">
                                     Our Hiring Partners
                                 </span>
                             </div>
@@ -226,24 +238,25 @@ export default function PlacementsStrip() {
                                     speed={34}
                                     hoverSpeed={8}
                                     direction="left"
-                                    logoHeight={70}
-                                    gap={30}
+                                    logoHeight={56}
+                                    gap={20}
                                     scaleOnHover
                                     fadeOut
                                     fadeOutColor="#071322"
+                                    renderItem={renderLogoCard}
                                     ariaLabel="Hiring partner logos"
                                 />
                             </div>
                         </motion.div>
 
                         {/* AFFILIATIONS — LOGO LOOP */}
-                        <motion.div variants={itemVariants} className="mt-6 sm:mt-12">
+                        <motion.div variants={itemVariants} className="mt-6 sm:mt-10">
                             <div className="mb-3.5 flex items-center gap-3 sm:gap-4">
-                                <span className="h-px flex-1 bg-white/[0.09]" />
-                                <span className="font-body whitespace-nowrap text-[12px] font-medium text-white/55 sm:text-[13.5px]">
+                                <span className="h-px flex-1 bg-white/[0.15]" />
+                                <span className="font-body whitespace-nowrap text-[12px] font-semibold text-white/80 sm:text-[13.5px]">
                                     Proudly Affiliated &amp; Recognized.
                                 </span>
-                                <span className="h-px flex-1 bg-white/[0.09]" />
+                                <span className="h-px flex-1 bg-white/[0.15]" />
                             </div>
 
                             <div className="py-1.5 transition-opacity duration-300 hover:opacity-90">
@@ -252,10 +265,11 @@ export default function PlacementsStrip() {
                                     speed={24}
                                     hoverSpeed={8}
                                     direction="right"
-                                    logoHeight={60}
-                                    gap={40}
+                                    logoHeight={56}
+                                    gap={24}
                                     fadeOut
                                     fadeOutColor="#071322"
+                                    renderItem={renderLogoCard}
                                     ariaLabel="Accreditation marks"
                                 />
                             </div>

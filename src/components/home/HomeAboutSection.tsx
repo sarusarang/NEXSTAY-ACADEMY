@@ -142,10 +142,10 @@ export const HomeAboutSection: React.FC = () => {
                             />
                         </motion.div>
 
-                        {/* Serif Heading */}
+                        {/* Heading matching hero banner */}
                         <motion.h2
                             variants={fadeUpBig}
-                            className="font-['Playfair_Display',serif] text-[2.15rem] leading-[1.15] sm:text-5xl lg:text-[3.5rem] font-normal text-white sm:leading-[1.12] tracking-normal mb-5 sm:mb-6"
+                            className="font-['Bebas_Neue','Outfit',sans-serif] text-4xl sm:text-6xl lg:text-7xl uppercase leading-[0.95] tracking-tight text-white mb-5 sm:mb-6"
                         >
                             Begin Your
                             <br />

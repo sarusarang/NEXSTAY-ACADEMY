@@ -158,7 +158,7 @@ export default function AboutWhyDifferent() {
                   <span>Explore Admissions</span>
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
-                <span className="font-['Outfit'] text-[11px] text-white/50">Batch 2025–26</span>
+                <span className="font-['Outfit'] text-[11px] text-white/50">Batch 2026–27</span>
               </div>
             </div>
 

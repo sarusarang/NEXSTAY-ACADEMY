@@ -33,10 +33,8 @@ export default function CTASection() {
     return (
         <section className="relative isolate overflow-hidden bg-[#071322] py-12 sm:py-24 md:py-12 lg:py-16">
             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
-
-                .font-display { font-family: 'Fraunces', ui-serif, Georgia, serif; }
-                .font-body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+                .font-display { font-family: 'Bebas Neue', 'Outfit', sans-serif; }
+                .font-body { font-family: 'Outfit', sans-serif; }
 
                 .cta-text-shadow {
                     text-shadow: 0 2px 24px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.5);
@@ -101,7 +99,7 @@ export default function CTASection() {
                         <div className="inline-flex items-center gap-2 rounded-full border border-[#C6A15B]/50 bg-[#071322]/90 px-4 sm:px-5 py-1.5 backdrop-blur-md shadow-lg shadow-black/40">
                             <Sparkles className="h-3.5 w-3.5 text-[#C6A15B]" />
                             <span className="font-body text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.24em] text-[#E8D19F]">
-                                Admissions Open · 2025–26 Batch
+                                Admissions Open · 2026–27 Batch
                             </span>
                         </div>
                     </motion.div>
@@ -109,7 +107,7 @@ export default function CTASection() {
                     {/* ================= HEADLINE ================= */}
                     <motion.h2
                         variants={riseVariants}
-                        className="cta-text-shadow font-display text-[2rem] sm:text-[2.75rem] md:text-[3.3rem] lg:text-[3.6rem] font-medium leading-[1.15] tracking-[-0.015em] text-white"
+                        className="cta-text-shadow font-['Bebas_Neue','Outfit',sans-serif] text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[0.93] tracking-tight text-white"
                     >
                         Your Career in Hospitality{" "}
                         <br className="hidden sm:inline" />

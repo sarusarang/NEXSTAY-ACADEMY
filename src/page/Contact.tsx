@@ -199,7 +199,7 @@ export default function Contact() {
               <div className="relative z-10">
                 <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
                   <div>
-                    <h3 className="font-['Outfit'] font-black text-xl text-white uppercase">Campus Headquarters</h3>
+                    <h3 className="font-['Bebas_Neue','Outfit',sans-serif] text-2xl sm:text-3xl text-white uppercase tracking-wide">Campus Headquarters</h3>
                     <span className="text-[11px] text-[#e5be58] font-bold uppercase tracking-wider">
                       Nexstay Academy of Hotel Management
                     </span>
@@ -340,7 +340,7 @@ export default function Contact() {
                 <CalendarCheck className="w-4 h-4" />
                 <span>Direct Admission Form</span>
               </div>
-              <h2 className="relative z-10 font-['Outfit'] font-black text-2xl sm:text-3xl text-white uppercase tracking-tight">
+              <h2 className="relative z-10 font-['Bebas_Neue','Outfit',sans-serif] text-3xl sm:text-4xl text-white uppercase tracking-tight">
                 Admissions & Campus Enquiry
               </h2>
               <p className="relative z-10 text-slate-300 text-xs sm:text-sm mt-1">
@@ -355,7 +355,7 @@ export default function Contact() {
                   <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-4">
                     <CheckCircle2 className="w-9 h-9" />
                   </div>
-                  <h3 className="font-['Outfit'] font-black text-2xl text-emerald-950 uppercase mb-2">
+                  <h3 className="font-['Bebas_Neue','Outfit',sans-serif] text-3xl text-emerald-950 uppercase tracking-tight mb-2">
                     Enquiry Submitted Successfully!
                   </h3>
                   <p className="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto leading-relaxed mb-6">
